@@ -6,15 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Incheon&#39;s Life</title>
+  <title>== 操作符的坑 | Incheon&#39;s Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Incheon&#39;s Life">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="==操作符解析 第一大类(有的状态): String. Number. Boolean. Object 第二大类(无的状态): Undefined. Null 第一大类和第二大类比较永远都是false 第二大类之间比较永远是true 对象与对象之间比较比较的都是栈中保存的地址值 NaN 不等于NaN  null和undefined null是关键字. undefined是标识符 初始的想法: va">
+<meta name="keywords" content="js,面试系列">
+<meta property="og:type" content="article">
+<meta property="og:title" content="== 操作符的坑">
+<meta property="og:url" content="http://yoursite.com/2017/10/13/== 操作符的坑/index.html">
 <meta property="og:site_name" content="Incheon&#39;s Life">
+<meta property="og:description" content="==操作符解析 第一大类(有的状态): String. Number. Boolean. Object 第二大类(无的状态): Undefined. Null 第一大类和第二大类比较永远都是false 第二大类之间比较永远是true 对象与对象之间比较比较的都是栈中保存的地址值 NaN 不等于NaN  null和undefined null是关键字. undefined是标识符 初始的想法: va">
 <meta property="og:locale" content="cn">
+<meta property="og:image" content="http://i.imgur.com/WlwF05e.png">
+<meta property="og:updated_time" content="2019-08-27T05:12:56.086Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Incheon&#39;s Life">
+<meta name="twitter:title" content="== 操作符的坑">
+<meta name="twitter:description" content="==操作符解析 第一大类(有的状态): String. Number. Boolean. Object 第二大类(无的状态): Undefined. Null 第一大类和第二大类比较永远都是false 第二大类之间比较永远是true 对象与对象之间比较比较的都是栈中保存的地址值 NaN 不等于NaN  null和undefined null是关键字. undefined是标识符 初始的想法: va">
+<meta name="twitter:image" content="http://i.imgur.com/WlwF05e.png">
   
     <link rel="alternative" href="/atom.xml" title="Incheon&#39;s Life" type="application/atom+xml">
   
@@ -154,85 +161,114 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-== 操作符的坑" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/13/CSS简单性能优化/" class="archive-article-date">
-  	<time datetime="2019-08-13T08:25:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/13/CSS简单性能优化/">CSS简单性能优化</a>
+    <h1 class="article-title" itemprop="name">
+      == 操作符的坑
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/css//" class="article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/ECMAScript/" class="archive-article-date">
-  	<time datetime="2019-02-22T09:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
+        
+        <a href="/2017/10/13/== 操作符的坑/" class="archive-article-date">
+  	<time datetime="2017-10-13T04:00:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-13</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/22/ECMAScript/">ECMAScript</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="操作符解析"><a href="#操作符解析" class="headerlink" title="==操作符解析"></a>==操作符解析</h4><ul>
+<li>第一大类(有的状态): String. Number. Boolean. Object</li>
+<li>第二大类(无的状态): Undefined. Null</li>
+<li>第一大类和第二大类比较永远都是false</li>
+<li>第二大类之间比较永远是true</li>
+<li>对象与对象之间比较比较的都是栈中保存的地址值</li>
+<li>NaN 不等于NaN</li>
+</ul>
+<h4 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h4><ul>
+<li>null是关键字. undefined是标识符</li>
+<li>初始的想法:<ul>
+<li>var a = null 当引用数据类型用</li>
+<li>var a = undefined 当基本数据类型用    </li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<h4 id="parseInt-和-parseFloat"><a href="#parseInt-和-parseFloat" class="headerlink" title="parseInt() 和 parseFloat()"></a>parseInt() 和 parseFloat()</h4><ul>
+<li>字符串: 第一位是数字则转换成Number. 否则都是NaN</li>
+<li>其他(不包括Number类型): NaN</li>
+</ul>
+<h4 id="Number"><a href="#Number" class="headerlink" title="Number()"></a>Number()</h4><ul>
+<li>字符串: 去除字符串两边空白字符和引号.<ul>
+<li>如果是合法数字就转换为数字. 否则是NaN</li>
+<li>空白字符串转换为 0 </li>
+</ul>
+</li>
+<li>Boolean: true为1. false为0</li>
+<li>Null: 0</li>
+<li>Undefined: NaN</li>
+<li>Object: NaN</li>
+</ul>
+<h4 id="valueOf-和toString"><a href="#valueOf-和toString" class="headerlink" title="valueOf() 和toString()"></a>valueOf() 和toString()</h4><ul>
+<li>valueOf() 对象转换成原始类型的值（数值、字符串和布尔值）<ul>
+<li>对象转基本数据类型 –&gt; 拆包(包装类)</li>
+</ul>
+</li>
+<li>toString() 对象转换为字符串时，会调用它的toString()方法<ul>
+<li>new String()</li>
+<li>new Number()</li>
+<li>new Boolean() </li>
+<li>以上都是装包 (包装类)</li>
+</ul>
+</li>
+</ul>
+<h4 id="相同数据类型比较-包括全等"><a href="#相同数据类型比较-包括全等" class="headerlink" title="相同数据类型比较 (包括全等===)"></a>相同数据类型比较 (包括全等===)</h4><ul>
+<li>必须类型相同. 值也相同  ==才能返回true</li>
+<li>对象不等于对象. 除非发生引用值的传递</li>
+<li>NaN 永远不等于NaN</li>
+</ul>
+<h4 id="不同数据类型比较"><a href="#不同数据类型比较" class="headerlink" title="不同数据类型比较"></a>不同数据类型比较</h4><ul>
+<li>== 趋于数字化</li>
+<li>基本数据类型 –&gt; 调用Number()方法</li>
+<li>引用数据类型 –&gt; 首先调用valueOf() 方法<ul>
+<li>如果返回是基本数据类型 –&gt; 直接进行比较 调用Number()方法</li>
+<li>如果返回是引用数据类型 –&gt; 再调用本身的 toString() 方法<ul>
+<li>如果返回是基本数据类型 –&gt; 直接进行比较</li>
+<li>如果返回是引用数据类型 (除非重写对象)  –&gt; 报错</li>
+</ul>
+</li>
+<li>例外: Date 先调用toString再调用valueOf</li>
+</ul>
+</li>
+</ul>
+<h4 id="引用数据类型方法重写的比较实例"><a href="#引用数据类型方法重写的比较实例" class="headerlink" title="引用数据类型方法重写的比较实例"></a>引用数据类型方法重写的比较实例</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function Test() &#123;</span><br><span class="line">  this.toString = function () &#123;</span><br><span class="line">  	  return 1;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//方法的重写</span><br><span class="line">Array.prototype.valueOf = function () &#123;</span><br><span class="line">	return new Test();</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Array.prototype.toString = function () &#123;</span><br><span class="line">	return 1</span><br><span class="line">&#125;;</span><br><span class="line">console.log([&quot;&quot;] == false); //false</span><br></pre></td></tr></table></figure>
+
+<h4 id="操作符总结"><a href="#操作符总结" class="headerlink" title="== 操作符总结"></a>== 操作符总结</h4><ul>
+<li>undefined == null，结果是true。且它俩与所有其他值比较的结果都是false。</li>
+<li>String == Boolean，需要两个操作数同时转为Number。</li>
+<li>String/Boolean == Number，需要String/Boolean转为Number。</li>
+<li>Object == Primitive，需要Object转为Primitive(具体通过valueOf和toString方法)。<ul>
+<li>Date 先调用tostring 后调用valueof</li>
+</ul>
+</li>
+</ul>
+<h4 id="操作符的坑"><a href="#操作符的坑" class="headerlink" title="== 操作符的坑"></a>== 操作符的坑</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">[] == []  //false</span><br><span class="line">&#123;&#125; == &#123;&#125; //false</span><br><span class="line">var a=&#123;&#125;; var b=a; b==a //true</span><br><span class="line">NaN == NaN  //false</span><br><span class="line">null == fasle  //false</span><br><span class="line">null == &quot;&quot;  //false</span><br><span class="line">null == undefined //true</span><br><span class="line">parseInt(null)  //NaN</span><br><span class="line">parseInt(&quot;&quot;)  //NaN</span><br><span class="line">parseInt(true)  //NaN</span><br><span class="line">Number(&quot;11111ssss&quot;)  //NaN</span><br><span class="line">!1 == 2  //false</span><br><span class="line">0.1+0.2 == 0.3 //false</span><br><span class="line"></span><br><span class="line">[&quot;&quot;].valueOf()  // [&quot;&quot;]</span><br><span class="line">[&quot;&quot;].toString()  //&quot;&quot;</span><br><span class="line">[&quot;&quot;] == 0  //true</span><br><span class="line">[&quot;&quot;] == false  //true</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://i.imgur.com/WlwF05e.png" alt></p>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -248,7 +284,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -261,17 +297,75 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/11/07/JS面试汇总Ⅰ/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JS面试汇总Ⅰ
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/09/01/CSS布局/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS布局</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#操作符解析"><span class="toc-number">1.</span> <span class="toc-text">==操作符解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null和undefined"><span class="toc-number">2.</span> <span class="toc-text">null和undefined</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#parseInt-和-parseFloat"><span class="toc-number">3.</span> <span class="toc-text">parseInt() 和 parseFloat()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Number"><span class="toc-number">4.</span> <span class="toc-text">Number()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#valueOf-和toString"><span class="toc-number">5.</span> <span class="toc-text">valueOf() 和toString()</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#相同数据类型比较-包括全等"><span class="toc-number">6.</span> <span class="toc-text">相同数据类型比较 (包括全等===)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#不同数据类型比较"><span class="toc-number">7.</span> <span class="toc-text">不同数据类型比较</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#引用数据类型方法重写的比较实例"><span class="toc-number">8.</span> <span class="toc-text">引用数据类型方法重写的比较实例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#操作符总结"><span class="toc-number">9.</span> <span class="toc-text">== 操作符总结</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#操作符的坑"><span class="toc-number">10.</span> <span class="toc-text">== 操作符的坑</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -294,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Incheon&#39;s Life</title>
+  <title>CSS清除浮动 | Incheon&#39;s Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Incheon&#39;s Life">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="清除浮动 让浮动的子元素撑起父元素的高度清除浮动方法一: 给父元素直接设置高度缺点: 扩展性不好  12345678910111213141516#wrap&amp;#123;  border:1px solid;  /*1. 直接添加高度*/  height: 400px;&amp;#125;#inner&amp;#123;  float: left;  width: 100px;  height: 100px;  b">
+<meta name="keywords" content="css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS清除浮动">
+<meta property="og:url" content="http://yoursite.com/2017/08/27/CSS清除浮动/index.html">
 <meta property="og:site_name" content="Incheon&#39;s Life">
+<meta property="og:description" content="清除浮动 让浮动的子元素撑起父元素的高度清除浮动方法一: 给父元素直接设置高度缺点: 扩展性不好  12345678910111213141516#wrap&amp;#123;  border:1px solid;  /*1. 直接添加高度*/  height: 400px;&amp;#125;#inner&amp;#123;  float: left;  width: 100px;  height: 100px;  b">
 <meta property="og:locale" content="cn">
+<meta property="og:updated_time" content="2019-08-27T05:10:57.022Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Incheon&#39;s Life">
+<meta name="twitter:title" content="CSS清除浮动">
+<meta name="twitter:description" content="清除浮动 让浮动的子元素撑起父元素的高度清除浮动方法一: 给父元素直接设置高度缺点: 扩展性不好  12345678910111213141516#wrap&amp;#123;  border:1px solid;  /*1. 直接添加高度*/  height: 400px;&amp;#125;#inner&amp;#123;  float: left;  width: 100px;  height: 100px;  b">
   
     <link rel="alternative" href="/atom.xml" title="Incheon&#39;s Life" type="application/atom+xml">
   
@@ -154,36 +159,50 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS清除浮动" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/13/CSS简单性能优化/" class="archive-article-date">
-  	<time datetime="2019-08-13T08:25:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/13/CSS简单性能优化/">CSS简单性能优化</a>
+    <h1 class="article-title" itemprop="name">
+      CSS清除浮动
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/08/27/CSS清除浮动/" class="archive-article-date">
+  	<time datetime="2017-08-27T11:23:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><ul>
+<li>让浮动的子元素撑起父元素的高度<h6 id="清除浮动方法一-给父元素直接设置高度"><a href="#清除浮动方法一-给父元素直接设置高度" class="headerlink" title="清除浮动方法一: 给父元素直接设置高度"></a>清除浮动方法一: 给父元素直接设置高度</h6>缺点: 扩展性不好</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#wrap&#123;</span><br><span class="line">  border:1px solid;</span><br><span class="line">  /*1. 直接添加高度*/</span><br><span class="line">  height: 400px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#inner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">     &lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
+
+<h6 id="清除浮动方法二-开启BFC"><a href="#清除浮动方法二-开启BFC" class="headerlink" title="清除浮动方法二: 开启BFC"></a>清除浮动方法二: 开启BFC</h6><p>缺点: IE6浏览器不支持. 有可能会造成一些不可预知的结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">#wrap&#123;</span><br><span class="line">  border:1px solid;</span><br><span class="line"></span><br><span class="line">  /*2. 开启BFC 缺点: 无法兼容IE6*/</span><br><span class="line">  overflow: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#inner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">     &lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h6 id="清除浮动方法三-空标签清除浮动"><a href="#清除浮动方法三-空标签清除浮动" class="headerlink" title="清除浮动方法三: 空标签清除浮动"></a>清除浮动方法三: 空标签清除浮动</h6><p>缺点: 结构行为样式不统一</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#wrap&#123;</span><br><span class="line">  border:1px solid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#inner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  &lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">     &lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">     &lt;div style=&quot;clear: both&quot;&gt;&lt;/div&gt; </span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h6 id="清除浮动方法四-br标签清除"><a href="#清除浮动方法四-br标签清除" class="headerlink" title="清除浮动方法四: br标签清除"></a>清除浮动方法四: br标签清除</h6><p>缺点: 利用html标签属性. 增加了结构</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#wrap&#123;</span><br><span class="line">  border:1px solid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#inner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  &lt;div id=&quot;wrap&quot;&gt;</span><br><span class="line">    &lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">    &lt;br clear=&quot;all&quot;&gt; </span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="清除浮动方法五-伪元素-推荐使用"><a href="#清除浮动方法五-伪元素-推荐使用" class="headerlink" title="清除浮动方法五: 伪元素 (推荐使用)"></a>清除浮动方法五: 伪元素 (推荐使用)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#wrap&#123;</span><br><span class="line">  border:1px solid;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#inner&#123;</span><br><span class="line">  float: left;</span><br><span class="line">  width: 100px;</span><br><span class="line">  height: 100px;</span><br><span class="line">  background: green;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.clearfix&#123;</span><br><span class="line">  *zomm:1; /*兼容IE6和IE7. 触发了haslayout*/</span><br><span class="line">&#125;</span><br><span class="line">.clearfix:after&#123;</span><br><span class="line">  content: &apos;.&apos;;</span><br><span class="line">  display: block;</span><br><span class="line">  clear: both;</span><br><span class="line">  height: 0;</span><br><span class="line">  visibility: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">  &lt;div id=&quot;wrap&quot; class=&quot;clearfix&quot;&gt;</span><br><span class="line">     &lt;div id=&quot;inner&quot;&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,7 +214,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -208,70 +227,75 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/ECMAScript/" class="archive-article-date">
-  	<time datetime="2019-02-22T09:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2017/09/01/CSS布局/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS布局
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/07/28/移动端基础总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">移动端基础总结</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/22/ECMAScript/">ECMAScript</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面试系列</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/js//" class="article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#清除浮动"><span class="toc-number">1.</span> <span class="toc-text">清除浮动</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#清除浮动方法一-给父元素直接设置高度"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">清除浮动方法一: 给父元素直接设置高度</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#清除浮动方法二-开启BFC"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">清除浮动方法二: 开启BFC</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#清除浮动方法三-空标签清除浮动"><span class="toc-number">1.0.0.3.</span> <span class="toc-text">清除浮动方法三: 空标签清除浮动</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#清除浮动方法四-br标签清除"><span class="toc-number">1.0.0.4.</span> <span class="toc-text">清除浮动方法四: br标签清除</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#清除浮动方法五-伪元素-推荐使用"><span class="toc-number">2.</span> <span class="toc-text">清除浮动方法五: 伪元素 (推荐使用)</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -294,8 +318,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

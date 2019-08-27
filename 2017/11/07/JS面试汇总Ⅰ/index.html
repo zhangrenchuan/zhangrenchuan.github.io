@@ -6,15 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | Incheon&#39;s Life</title>
+  <title>JS面试汇总Ⅰ | Incheon&#39;s Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Incheon&#39;s Life">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="作用域 只是维护自己范围内变量的集合. 实际就是一套规则 作用域负责收集并维护由所有声明的标识符组成的一系列查询，并实施一套非常严格的规则，确定当前执行的代码对这些标识符的访问权限 狭义上来说作用域就是一个对象（更确切的来说应该是集合） 广义上来说作用域是一套用来存储变量，并且之后可以方便的找到这些变量的规则 javascript中最普遍的作用域是函数作用域  上下文环境 上下文环境也是一个规则">
+<meta name="keywords" content="js,面试系列">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS面试汇总Ⅰ">
+<meta property="og:url" content="http://yoursite.com/2017/11/07/JS面试汇总Ⅰ/index.html">
 <meta property="og:site_name" content="Incheon&#39;s Life">
+<meta property="og:description" content="作用域 只是维护自己范围内变量的集合. 实际就是一套规则 作用域负责收集并维护由所有声明的标识符组成的一系列查询，并实施一套非常严格的规则，确定当前执行的代码对这些标识符的访问权限 狭义上来说作用域就是一个对象（更确切的来说应该是集合） 广义上来说作用域是一套用来存储变量，并且之后可以方便的找到这些变量的规则 javascript中最普遍的作用域是函数作用域  上下文环境 上下文环境也是一个规则">
 <meta property="og:locale" content="cn">
+<meta property="og:image" content="http://i.imgur.com/OlnSqjV.png">
+<meta property="og:image" content="http://i.imgur.com/bbTDLi8.png">
+<meta property="og:image" content="http://i.imgur.com/BPZBODQ.png">
+<meta property="og:image" content="http://i.imgur.com/kVn7hlV.png">
+<meta property="og:image" content="http://i.imgur.com/ptEEvTn.png">
+<meta property="og:image" content="http://i.imgur.com/w5uoQST.png">
+<meta property="og:image" content="http://i.imgur.com/fZEHpKb.png">
+<meta property="og:image" content="http://i.imgur.com/h4HsJBp.png">
+<meta property="og:image" content="http://i.imgur.com/MHBWRKJ.png">
+<meta property="og:image" content="http://i.imgur.com/bWm406I.png">
+<meta property="og:image" content="http://i.imgur.com/yZsgEbV.png">
+<meta property="og:updated_time" content="2019-08-27T05:07:42.679Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Incheon&#39;s Life">
+<meta name="twitter:title" content="JS面试汇总Ⅰ">
+<meta name="twitter:description" content="作用域 只是维护自己范围内变量的集合. 实际就是一套规则 作用域负责收集并维护由所有声明的标识符组成的一系列查询，并实施一套非常严格的规则，确定当前执行的代码对这些标识符的访问权限 狭义上来说作用域就是一个对象（更确切的来说应该是集合） 广义上来说作用域是一套用来存储变量，并且之后可以方便的找到这些变量的规则 javascript中最普遍的作用域是函数作用域  上下文环境 上下文环境也是一个规则">
+<meta name="twitter:image" content="http://i.imgur.com/OlnSqjV.png">
   
     <link rel="alternative" href="/atom.xml" title="Incheon&#39;s Life" type="application/atom+xml">
   
@@ -154,85 +171,364 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-JS面试汇总Ⅰ" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/13/CSS简单性能优化/" class="archive-article-date">
-  	<time datetime="2019-08-13T08:25:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/13/CSS简单性能优化/">CSS简单性能优化</a>
+    <h1 class="article-title" itemprop="name">
+      JS面试汇总Ⅰ
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/css//" class="article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/02/22/ECMAScript/" class="archive-article-date">
-  	<time datetime="2019-02-22T09:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-02-22</time>
+        
+        <a href="/2017/11/07/JS面试汇总Ⅰ/" class="archive-article-date">
+  	<time datetime="2017-11-07T05:37:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-07</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/02/22/ECMAScript/">ECMAScript</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h3><ul>
+<li>只是维护自己范围内变量的集合. 实际就是一套规则</li>
+<li>作用域负责收集并维护由所有声明的标识符组成的一系列查询，并实施一套非常严格的<strong>规则</strong>，确定当前执行的代码对这些标识符的访问权限</li>
+<li>狭义上来说作用域就是一个对象（更确切的来说应该是集合）</li>
+<li>广义上来说作用域是一套用来存储变量，并且之后可以方便的找到这些变量的规则</li>
+<li>javascript中最普遍的作用域是函数作用域</li>
+</ul>
+<h3 id="上下文环境"><a href="#上下文环境" class="headerlink" title="上下文环境"></a>上下文环境</h3><ul>
+<li>上下文环境也是一个规则</li>
+<li>代码（全局代码，函数体，eval代码）执行前的准备工作：<ul>
+<li>1.提升（变量 函数 函数表达式）</li>
+<li>2.确定this指向</li>
+<li>3.与对应作用域关联(实际就是赋值操作)</li>
+<li>4.函数体还需要参数赋值,arguments赋值</li>
+</ul>
+</li>
+<li>可以理解为一个看不见摸不着的对象（有若干个属性），虽然看不见摸不着，但确实实实在在存在的，因为所有的变量的值都在里面存储着</li>
+<li>另外，对于函数来说，上下文环境是在调用时创建的</li>
+</ul>
+<h4 id="作用域和上下文环境关系"><a href="#作用域和上下文环境关系" class="headerlink" title="作用域和上下文环境关系"></a>作用域和上下文环境关系</h4><ul>
+<li>一个作用域内可能包含若干个上下文环境。</li>
+<li>有可能从来没有过上下文环境(函数从来就没有被调用过)</li>
+<li>也有可能有过，但在函数被调用完毕后，上下文环境被销毁了</li>
+<li>除了全局作用域外,每个函数都要创建一个作用域(函数作用域).作用域的查找: 函数作用域+1</li>
+<li>在程序执行之前就会生成全局上下文环境. 每调用一次函数就产生一次上下文环境.上下文环境的查找: 调用次数+1</li>
+</ul>
+<hr>
+<h3 id="变量左查询-amp-右查询"><a href="#变量左查询-amp-右查询" class="headerlink" title="变量左查询&amp;右查询"></a>变量左查询&amp;右查询</h3><ul>
+<li>左查询: 赋值符号的左侧<ul>
+<li>赋值操作的目标</li>
+<li>函数调用时实参与形参的关系就是一次左查询</li>
+</ul>
+</li>
+<li>右查询: 赋值符号的非左侧<ul>
+<li>赋值操作的源头</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<h4 id="变量查询规则"><a href="#变量查询规则" class="headerlink" title="变量查询规则"></a>变量查询规则</h4><ul>
+<li>非严格模式:<ul>
+<li>LHS在查询所有的嵌套作用域中遍寻不到所需变量时,全局作用域中会创建具有该名称的变量</li>
+<li>RHS在查询所有的嵌套作用域中遍寻不到所需的变量时，引擎就会抛出ReferenceError异常</li>
+<li>注意: RHS在typeof时不会报异常</li>
+</ul>
+</li>
+<li>严格模式:<ul>
+<li>未查询到变量时RHS和LHS都会抛出ReferenceError异常</li>
+</ul>
+</li>
+<li>ReferenceError: 在作用域中找不到变量</li>
+<li>typeError: 执行错误. 跟作用域判别无关</li>
+</ul>
+<h4 id="作用域查找变量"><a href="#作用域查找变量" class="headerlink" title="作用域查找变量"></a>作用域查找变量</h4><ul>
+<li>先基于作用域链找到最顶层. 如果都没有去原型链上找. 如果有的话就拿来用</li>
+<li>window.xx直接从全局中找</li>
+<li>xx 会一层一层找直到找到全局</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Object.prototype.a = 1;</span><br><span class="line">(function () &#123;</span><br><span class="line">  //var a = 3;</span><br><span class="line">	  function foo() &#123;</span><br><span class="line">	  	  return function () &#123;</span><br><span class="line">	  	  	  console.log(a); //1</span><br><span class="line">	  	  	  console.log(window.a);//1</span><br><span class="line">	  	  &#125;</span><br><span class="line">	  &#125;</span><br><span class="line">	  foo()()</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
+<h4 id="typeof-安全机制"><a href="#typeof-安全机制" class="headerlink" title="typeof 安全机制"></a>typeof 安全机制</h4><ul>
+<li>意义<ul>
+<li>只在开发和测试程序使用全局变量DEBUG调试模式开关时</li>
+<li>为某个缺失的功能写衬垫代码时</li>
+</ul>
+</li>
+<li><strong>typeof做右查询最终会返回变量的值的类型并不会报错</strong></li>
+<li>undefined: 已经在作用域中声明但还没有赋值的变量.typeof返回的是 undefined</li>
+<li>undeclared: 没有在作用域中声明过的变量.typeof返回的还是 undefined</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">console.log(typeof a); //undefined</span><br><span class="line">console.log(typeof typeof 42); //string</span><br><span class="line"></span><br><span class="line">var a1;</span><br><span class="line">console.log(typeof a1); //undefined</span><br><span class="line"></span><br><span class="line">var b =42;</span><br><span class="line">console.log(typeof b); //number</span><br><span class="line">var c;</span><br><span class="line">b = c;</span><br><span class="line">console.log(typeof b); //undefined</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="提升-预解析"><a href="#提升-预解析" class="headerlink" title="提升(预解析)"></a>提升(预解析)</h3><ul>
+<li>提升是上下文环境这套规则在管理</li>
+<li>变量提升<ul>
+<li>变量的提升是声明的提升</li>
+<li>变量提升不受if判断暗示影响照常提升</li>
+</ul>
+</li>
+<li>函数提升<ul>
+<li>函数的提升是函数整体的提升 (声明式函数 function关键字)</li>
+<li>函数提升优于变量的提升</li>
+<li>函数表达式是变量的声明提升 (var或者IIFE)</li>
+<li>函数提升会受到if判断暗示影响不会被提升.<strong>在块中不要定义函数</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><ul>
+<li>当函数可以访问并记住自己所处的作用域时，就会产生闭包。</li>
+<li>常见场景:<ul>
+<li>函数作为返回值</li>
+<li>函数作为参数传递</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="值传递与引用值的传递"><a href="#值传递与引用值的传递" class="headerlink" title="值传递与引用值的传递"></a>值传递与引用值的传递</h3><ul>
+<li><strong>JS中所有的传递都是值的传递. 没有引用传递</strong><ul>
+<li>基本值的传递 (基本值都储存在栈里)</li>
+<li>引用值的传递 (引用值都储存在堆里)</li>
+</ul>
+</li>
+<li>JS中变量不可能成为指向另外一个变量的指针</li>
+<li>基本数据类型总是通过值复制的方式来赋值/传递</li>
+<li>引用数据类型总是通过引用复制来完成赋值/传递</li>
+<li><strong>注意: 引用指向的是值而非变量.所以一个引用无法更改另一个引用的指向,但是可以更改不同变量共同指向的值</strong></li>
+</ul>
+<blockquote>
+<p>引用传递:</p>
+</blockquote>
+<blockquote>
+<p> 1.同一个引用被多个变量同时指向的时候.任一变量修改引用结果其他变量都会被修改.</p>
+</blockquote>
+<blockquote>
+<p>2.引用修改时,变量也会同时改变</p>
+</blockquote>
+<p><img src="http://i.imgur.com/OlnSqjV.png" alt></p>
+<p><img src="http://i.imgur.com/bbTDLi8.png" alt></p>
+<hr>
+<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><h4 id="函数的prototype属性"><a href="#函数的prototype属性" class="headerlink" title="函数的prototype属性"></a>函数的prototype属性</h4><ul>
+<li>每个函数都有一个prototype属性, 它存储的是地址值  默认指向一个原型对象</li>
+<li>原型对象中有一个属性constructor, 它指向函数对象<br>给函数原型添加属性(一般都是方法)</li>
+<li>作用: 函数的所有实例对象自动拥有原型中的属性(方法)</li>
+</ul>
+<h4 id="显示原型和隐式原型"><a href="#显示原型和隐式原型" class="headerlink" title="显示原型和隐式原型"></a>显示原型和隐式原型</h4><p>函数的prototype属性(显示原型属性): 在定义函数创建函数对象时自动添加的, 默认值指向一个空的Object对象  (当然它也有<strong>proto</strong>属性)</p>
+<p>函数实例对象的<strong>proto</strong>属性(隐式原型属性): 创建实例对象时自动添加的, 默认值为构造函数的显式原型prototype的属性值</p>
+<ol>
+<li>每个函数function都有一个prototype属性，即显式原型属性</li>
+<li>通过函数new出来的实例对象都有一个<strong>proto</strong>属性，可称为隐式原型属性</li>
+<li>实例对象的隐式原型的值等于其构造函数的显式原型的值</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function Fn()&#123;&#125;  //执行函数定义(也就是创建函数对象)</span><br><span class="line">Fn.prototype (显式原型)  --&gt; 空Object &#123;&#125;</span><br><span class="line">var fn = new Fn() //创建函数Fn的实例对象</span><br><span class="line">fn.__proto__  (隐式原型) === Fn.prototype</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://i.imgur.com/BPZBODQ.png" alt></p>
+<pre><code>1.创建函数时会在堆空间里创建出两个对象(函数对象和空的原型对象),三个内存空间
+2.函数对象堆空间的地址值就是定义函数名栈空间的地址值. 
+3.执行函数定义的时候(创建函数时)就会创建出原型对象
+3.原型对象实际上是一个空的Object的实例对象
+4.函数对象原型prototype指向空的Object原型对象{}.地址值等于prototype
+5.原型对象不是我们定义的,它本身就有. 其中包含一些方法 如constructor toString
+5.原型对象的隐式原型__proto__是一个null
+6.__proto__隐式原型在创建对应的实例对象时创建的
+7.函数实例对象__proto__隐式原型的地址值等于函数对象prototype的地址值
+8._proto_和prototype的内容是一样的,所以指向同一个内存原型对象Object{}
+9.当要使用一个对象的某个属性时,如果该对象本身具有则直接使用. 如果没有则去__proto__的原型链中找
+-/ 程序员能直接操作显式原型, 但不能直接操作隐式原型(ES6之前)
+-/ 但是程序最终操作的是隐式原型的属性</code></pre><p><img src="http://i.imgur.com/kVn7hlV.png" alt></p>
+<h3 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h3><p>访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着实例对象的隐式原型链<strong>proto</strong>这条链向上找. 链条的最后是Object的原型为null.最后找不到返回undefined</p>
+<p><strong>别名: 隐式原型链</strong></p>
+<p><strong>作用: 查找对象的属性(方法)</strong></p>
+<p><img src="http://i.imgur.com/ptEEvTn.png" alt></p>
+<p><img src="http://i.imgur.com/w5uoQST.png" alt></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">console.log(Object, &#123;&#125;);</span><br><span class="line">var obj = &#123;&#125;;</span><br><span class="line">console.log(obj.__proto__ === Object.prototype); //true</span><br><span class="line">//Object是函数 &#123;&#125;是Object的实例对象</span><br><span class="line">//所有的实例对象都有隐式原型属性</span><br><span class="line">//Object原型对象是所有实例对象的顶部</span><br><span class="line">//Object函数的原型对象的__proto__为null</span><br><span class="line">由于所有的对象的原型链都会找到Object.prototype，因此所有的对象都会有Object.prototype的方法。这就是所谓的“继承”。</span><br><span class="line"></span><br><span class="line">function fn()&#123;&#125;</span><br><span class="line">console.log(fn.__proto__=== Function.prototype)</span><br><span class="line">//所有的函数都有显示原型属性 </span><br><span class="line">//所有函数都是Function(构造函数) 的实例对象</span><br><span class="line"></span><br><span class="line">console.log(Function.prototype === Function.__proto__); //true</span><br><span class="line">Function()函数又是Function自己的实例对象</span><br></pre></td></tr></table></figure>
+
+<h3 id="原型链属性问题"><a href="#原型链属性问题" class="headerlink" title="原型链属性问题"></a>原型链属性问题</h3><ul>
+<li>读取对象的属性值时(读的操作): 会自动到原型链中查找</li>
+<li>设置对象的属性值时(写的操作): 不会查找原型链, 如果当前对象中没有此属性, 直接添加此属性并设置其值</li>
+<li>方法一般定义在原型中, 属性一般通过构造函数定义在对象本身上</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Person.prototype.setName = function (name)&#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">&#125;; //方法多定义在原型中</span><br><span class="line"></span><br><span class="line">Person.prototype.sex = &apos;男&apos;; //原型添加属性 不常用</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://i.imgur.com/fZEHpKb.png" alt></p>
+<h3 id="instanceof是如何判断的"><a href="#instanceof是如何判断的" class="headerlink" title="instanceof是如何判断的?"></a>instanceof是如何判断的?</h3><ul>
+<li>表达式: A instanceof  B<ul>
+<li>A实例对象<strong>proto</strong>   </li>
+<li>B构造函数 prototype</li>
+</ul>
+</li>
+<li>instanceof表示的就是一种继承关系, 或者原型链的结构</li>
+<li>判断B的构造函数的原型prototype是否在实例对象_proto_的原型链上. </li>
+</ul>
+<p>规则: </p>
+<p>沿着A实例对象的_proto_原型链这条线来找, 同时沿着B构造函数的prototype这条线找, 如果两条线能找到同一个对象. 那么就返回true</p>
+<p><img src="http://i.imgur.com/h4HsJBp.png" alt><br><img src="http://i.imgur.com/MHBWRKJ.png" alt></p>
+<hr>
+<h3 id="原型链继承"><a href="#原型链继承" class="headerlink" title="原型链继承"></a>原型链继承</h3><p><strong>原理: 子类型的原型是父类型的实例对象</strong></p>
+<ol>
+<li>创建父类型的构造函数</li>
+<li>在父函数的原型中添加方法</li>
+<li>创建子类型的构造函数</li>
+<li>将子类型的原型属性指向父类型的实例对象(子.prototype = new 父)</li>
+<li>创建子类型函数的实例对象</li>
+<li>子类型的实例对象可以直接调用父构造函数原型中的方法</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">function Parent() &#123;</span><br><span class="line">	  this.pName = &apos;the parent&apos;</span><br><span class="line">&#125;</span><br><span class="line">Parent.prototype.showP = function () &#123; //Parent的实例对象才可调用</span><br><span class="line">	  console.log(&apos;Parent &apos; + this.pName); //此时this是child</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">//定义一个子类型的构造函数</span><br><span class="line">function Child() &#123;</span><br><span class="line">  this.cName = &apos;the child&apos;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//让child的父对象(原型)是一个Parent的实例对象</span><br><span class="line">//由于Child的prototype默认指向一个空的object()</span><br><span class="line">//将Child的prototype指向Parent的实例对象</span><br><span class="line">Child.prototype = new Parent(); //将父类型的实例赋值给子类型的原型属性</span><br><span class="line"></span><br><span class="line">Child.prototype.showC = function () &#123;</span><br><span class="line">  console.log(&apos;Child &apos; + this.cName);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var child = new Child();</span><br><span class="line"></span><br><span class="line">child.showP(); //实现了继承</span><br><span class="line">Parent the parent //输出结果</span><br></pre></td></tr></table></figure>
+
+<h3 id="借用构造函数继承"><a href="#借用构造函数继承" class="headerlink" title="借用构造函数继承"></a>借用构造函数继承</h3><p><strong>原理:在子类型构造函数中通过call/apply()调用父构造函数中的属性</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function Person(name,age) &#123;</span><br><span class="line">  this.name = name;</span><br><span class="line">  this.age = age;</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line">function Student(name,age,price) &#123;</span><br><span class="line">  //去掉重复代码 借用Person的代码</span><br><span class="line">  Person.call(this,name,age); //相当于 this.Person(name,age)</span><br><span class="line">  //Person.apply(this,[name,age])</span><br><span class="line">  this.price = price;</span><br><span class="line">&#125;</span><br><span class="line">	</span><br><span class="line">var s = new Student(&apos;tom&apos;,25,2000);</span><br><span class="line">console.log(s);</span><br><span class="line">Student &#123;name: &quot;tom&quot;, age: 25, price: 2000&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="原型链继承-借用构造函数组合继承"><a href="#原型链继承-借用构造函数组合继承" class="headerlink" title="原型链继承 + 借用构造函数组合继承"></a>原型链继承 + 借用构造函数组合继承</h3><p>原理:</p>
+<p>1.利用原型链实现对父函数原型中方法的继承</p>
+<p>2.利用call/apply()借用父函数初始化的相同属性</p>
+<p>优点:节省了不必要的重复性代码</p>
+<p><img src="http://i.imgur.com/bWm406I.png" alt></p>
+<hr>
+<h3 id="线程机制"><a href="#线程机制" class="headerlink" title="线程机制"></a>线程机制</h3><p>1.进程：程序的一次执行, 它占有一片独有的内存空间</p>
+<p>2.线程：CPU的基本调度单位, 是程序执行的一个完整流程</p>
+<p>3.进程与线程</p>
+<ul>
+<li>应用程序必须运行在某个进程的某个线程上</li>
+<li>一个进程中一般至少有一个运行的线程: 主线程,启动后自动创建</li>
+<li>一个进程中也可以同时运行多个线程, 我们会说程序是多线程运行的</li>
+<li>一个进程内的数据可以供其中的多个线程直接共享</li>
+<li>多个进程之间的数据是不能直接共享的</li>
+<li>进程池: 保存多个线程对象的容器,实现线程对象的反复利用</li>
+</ul>
+<p>多进程运行: 一个应用程序可以同时启动多个实例运动. 比如chrome浏览器</p>
+<p>多线程运行: 在一个进程内, 同时有多个线程可以运行</p>
+<p><strong>多线程</strong></p>
+<ul>
+<li>优点: 提高CPU利用率</li>
+<li>缺点: 创建多线程的开销,线程间切换的开销,死锁与状态同步问题</li>
+</ul>
+<p><strong>单线程</strong></p>
+<ul>
+<li>优点:顺序编程简单易懂</li>
+<li>缺点:效率低</li>
+</ul>
+<p>JS是单线程的语言. 但在H5中Web Workers可以多线程运行</p>
+<p>单进程浏览器 : firefox / 老版IE</p>
+<p>多进程浏览器: chrome / 新版IE</p>
+<p>浏览器都是多线程运行. 可在任务管理器中查看</p>
+<blockquote>
+</blockquote>
+<ul>
+<li>阻塞与非阻塞<ul>
+<li>I/O (了解)<ul>
+<li>阻塞I/O: 调用时, 应用程序需要等待IO完成才返回结果</li>
+<li>非阻塞I/O: 调用之后立即返回, 需要通过轮询得到IO的结果数据</li>
+</ul>
+</li>
+<li>非I/O<ul>
+<li>阻塞: 代码的执行导致所在的线程暂停, 不能继续执行 —&gt;alert()</li>
+<li>非阻塞 : 其它代码</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>同步与异步<ul>
+<li>它们描述的是调用执行功能程序的方式</li>
+<li>同步: 就是在发出一个功能调用时，在没有得到结果之前，该调用就不返回.</li>
+<li>异步: 当一个异步过程调用发出后，调用者不能立刻得到结果, 但会立即返回;实际处理这个调用的部分在完成后，通过通知或回调来通知调用者</li>
+</ul>
+</li>
+<li>并发与并行(了解)<ul>
+<li>并行: 多个事件在同一时刻发生</li>
+<li>并发: 指多个事件在同一时间间隔内发生)</li>
+</ul>
+</li>
+</ul>
+<p><img src="http://i.imgur.com/yZsgEbV.png" alt></p>
+<hr>
+<h3 id="this"><a href="#this" class="headerlink" title="this"></a>this</h3><ul>
+<li>this是上下文环境管理.跟作用域无关</li>
+<li>根据<strong>调用位置</strong>上函数的<strong>调用方式</strong>来确定函数中this使用的绑定规则</li>
+</ul>
+<h4 id="this绑定规则一-默认绑定"><a href="#this绑定规则一-默认绑定" class="headerlink" title="this绑定规则一: 默认绑定"></a>this绑定规则一: 默认绑定</h4><ul>
+<li>无法应用其他规则时的默认规则就是独立函数调用 <code>foo()</code></li>
+<li>独立函数调用在非严格模式下会绑定给window</li>
+<li>独立函数调用时this整个机制在严格模式下会绑定给undefined<ul>
+<li>严格模式下进行函数调用不会影响默认绑定规则</li>
+</ul>
+</li>
+</ul>
+<h4 id="this绑定规则二-隐式绑定"><a href="#this绑定规则二-隐式绑定" class="headerlink" title="this绑定规则二: 隐式绑定"></a>this绑定规则二: 隐式绑定</h4><ul>
+<li>隐式绑定的规则是调用位置是否有上下文对象，或者说是否被某个对象拥有或者包含</li>
+<li>当函数引用有上下文对象时，隐式绑定规则会把函数调用中的 this 绑定到这个上下文对象</li>
+<li>以 对象 点 的形式调用.谁调用this就指向谁 <code>obj.foo()</code></li>
+<li>以对象连缀形式调用,this只看离它最近的对象并确认绑定</li>
+</ul>
+<h5 id="隐式丢失"><a href="#隐式丢失" class="headerlink" title="隐式丢失"></a>隐式丢失</h5><ul>
+<li>隐式丢失场景<ul>
+<li>隐式绑定的形式作赋值</li>
+<li>参数的传递</li>
+<li>函数传入JS内置的函数.比如setTimeout</li>
+</ul>
+</li>
+<li>看似是对象dian的形式,但实际是独立函数形式调用</li>
+<li>被隐式绑定的函数在丢失绑定对象后导致this的绑定变成默认绑定,即window或undefined上</li>
+</ul>
+<h4 id="this绑定规则三-显示绑定"><a href="#this绑定规则三-显示绑定" class="headerlink" title="this绑定规则三: 显示绑定"></a>this绑定规则三: 显示绑定</h4><ul>
+<li><strong>call()和apply() 方法实现显示绑定</strong><ul>
+<li>第一个参数绑定this</li>
+<li>第二个参数赋值</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Array.apply(null,&#123;length:3&#125;); </span><br><span class="line">相当于Array(undefined,undefined,undefined)</span><br><span class="line">`</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var b=new Array(3);</span><br><span class="line">相当于 Array(undefined * 3)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>apply() 传递的是数组或伪数组</p>
+<p>任何有length属性的对象都可称为伪数组</p>
+<p>只有长度没有值的数组称为稀疏数组(数组中有些API无法使用)</p>
+</blockquote>
+<h5 id="显示绑定的硬绑定"><a href="#显示绑定的硬绑定" class="headerlink" title="显示绑定的硬绑定"></a>显示绑定的硬绑定</h5><ol>
+<li>要有一个包裹函数</li>
+<li>在包裹函数内必须有一个函数的显示绑定</li>
+<li>外层包裹函数的绑定不会影响内层绑定形式</li>
+<li>典型应用场景:创建一个包裹函数，传入所有的参数并返回接收到的所有值</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">	console.log( this.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a =1;</span><br><span class="line">var obj = &#123;</span><br><span class="line">	a:2</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">var bar = function() &#123;</span><br><span class="line">	console.log( this.a ); </span><br><span class="line">	foo.call( obj ); //硬绑定</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">bar(); //1  2</span><br></pre></td></tr></table></figure>
+
+<h5 id="bind-硬绑定this"><a href="#bind-硬绑定this" class="headerlink" title="bind()硬绑定this"></a>bind()硬绑定this</h5><ul>
+<li>返回一个新的函数并指定该新函数的this指向</li>
+<li>硬绑定解决隐式绑定的隐式丢失(尤其是异步函数时)</li>
+<li>第一个参数绑定this</li>
+<li>第二个参数赋值</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">function foo() &#123;</span><br><span class="line">	console.log( this.a );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var a = 1; // a是全局对象的属性</span><br><span class="line">var obj = &#123;</span><br><span class="line">	a: 2,</span><br><span class="line">	foo: foo</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">setTimeout( foo.bind(obj), 1000 ); // &quot;2&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="this绑定规则四-new绑定"><a href="#this绑定规则四-new绑定" class="headerlink" title="this绑定规则四: new绑定"></a>this绑定规则四: new绑定</h4><ul>
+<li>JS中构造函数只是一些使用 new 操作符时被调用的普通函数</li>
+<li>实际并不存在构造函数</li>
+<li>使用 new 来调用函数，或者说发生构造函数调用时，this 的绑定就是new出来的实例对象</li>
+</ul>
+<h4 id="this绑定的优先级"><a href="#this绑定的优先级" class="headerlink" title="this绑定的优先级"></a>this绑定的优先级</h4><p>new绑定 &gt; 显示绑定 &gt; 隐式绑定 &gt; 默认绑定</p>
+<h4 id="this的其他绑定"><a href="#this的其他绑定" class="headerlink" title="this的其他绑定"></a>this的其他绑定</h4><ul>
+<li>ES6箭头函数的this要看外层作用域.如果有函数则this绑定该函数的this.如果没有函数则this绑定window</li>
+<li>null 或者 undefined 作为 this 的绑定对象传入call或apply时,this会被忽略. 使用默认绑定规则</li>
+</ul>
+<h4 id="柯里化"><a href="#柯里化" class="headerlink" title="柯里化"></a>柯里化</h4><ul>
+<li>给目标函数预绑定一些参数</li>
+<li>主要作用在于不会污染全局. 仅作this指向</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function foo(a,b) &#123;</span><br><span class="line">	console.log( &quot;a:&quot; + a + &quot;, b:&quot; + b );</span><br><span class="line">&#125;</span><br><span class="line">// 我们的DMZ空对象,“DMZ”（demilitarized zone，非军事区）</span><br><span class="line">var ø = Object.create( null );//&#123;&#125;</span><br><span class="line">// 把数组展开成参数</span><br><span class="line">foo.apply( ø, [2, 3] ); // a:2, b:3</span><br><span class="line">// 使用bind(..)进行柯里化</span><br><span class="line">var bar = foo.bind( ø, 2 );</span><br><span class="line">bar( 3 ); // a:2, b:3</span><br></pre></td></tr></table></figure>
+
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -248,7 +544,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -261,17 +557,75 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2017/11/12/JS面试汇总Ⅱ/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          JS面试汇总Ⅱ
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2017/10/13/== 操作符的坑/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">== 操作符的坑</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#上下文环境"><span class="toc-number">2.</span> <span class="toc-text">上下文环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#作用域和上下文环境关系"><span class="toc-number">2.1.</span> <span class="toc-text">作用域和上下文环境关系</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变量左查询-amp-右查询"><span class="toc-number">3.</span> <span class="toc-text">变量左查询&amp;右查询</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#变量查询规则"><span class="toc-number">3.1.</span> <span class="toc-text">变量查询规则</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#作用域查找变量"><span class="toc-number">3.2.</span> <span class="toc-text">作用域查找变量</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#typeof-安全机制"><span class="toc-number">3.3.</span> <span class="toc-text">typeof 安全机制</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提升-预解析"><span class="toc-number">4.</span> <span class="toc-text">提升(预解析)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#闭包"><span class="toc-number">5.</span> <span class="toc-text">闭包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#值传递与引用值的传递"><span class="toc-number">6.</span> <span class="toc-text">值传递与引用值的传递</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型"><span class="toc-number">7.</span> <span class="toc-text">原型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#函数的prototype属性"><span class="toc-number">7.1.</span> <span class="toc-text">函数的prototype属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#显示原型和隐式原型"><span class="toc-number">7.2.</span> <span class="toc-text">显示原型和隐式原型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型链"><span class="toc-number">8.</span> <span class="toc-text">原型链</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型链属性问题"><span class="toc-number">9.</span> <span class="toc-text">原型链属性问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#instanceof是如何判断的"><span class="toc-number">10.</span> <span class="toc-text">instanceof是如何判断的?</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型链继承"><span class="toc-number">11.</span> <span class="toc-text">原型链继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#借用构造函数继承"><span class="toc-number">12.</span> <span class="toc-text">借用构造函数继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#原型链继承-借用构造函数组合继承"><span class="toc-number">13.</span> <span class="toc-text">原型链继承 + 借用构造函数组合继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#线程机制"><span class="toc-number">14.</span> <span class="toc-text">线程机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this"><span class="toc-number">15.</span> <span class="toc-text">this</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#this绑定规则一-默认绑定"><span class="toc-number">15.1.</span> <span class="toc-text">this绑定规则一: 默认绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#this绑定规则二-隐式绑定"><span class="toc-number">15.2.</span> <span class="toc-text">this绑定规则二: 隐式绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#隐式丢失"><span class="toc-number">15.2.1.</span> <span class="toc-text">隐式丢失</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#this绑定规则三-显示绑定"><span class="toc-number">15.3.</span> <span class="toc-text">this绑定规则三: 显示绑定</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#显示绑定的硬绑定"><span class="toc-number">15.3.1.</span> <span class="toc-text">显示绑定的硬绑定</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#bind-硬绑定this"><span class="toc-number">15.3.2.</span> <span class="toc-text">bind()硬绑定this</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#this绑定规则四-new绑定"><span class="toc-number">15.4.</span> <span class="toc-text">this绑定规则四: new绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#this绑定的优先级"><span class="toc-number">15.5.</span> <span class="toc-text">this绑定的优先级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#this的其他绑定"><span class="toc-number">15.6.</span> <span class="toc-text">this的其他绑定</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#柯里化"><span class="toc-number">15.7.</span> <span class="toc-text">柯里化</span></a></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -294,8 +648,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
